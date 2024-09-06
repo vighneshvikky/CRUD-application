@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/adminHome.css">
+</head>
+<body>
+<h3>Welcome to home of the ADMIN</h3>
+
+<form>
+
+<input type="text" placeholder="Search" name="search">
+<button type="submit">Search</button>
+</form>
+<table width="50%">
+    <a href="/admin/createNewUser"><button>create user</button></a>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Edit</th>
+        <th>Remove</th>
+    </tr>
+    <% 
+    if(users.length > 0){
+
+        for(let i = 0 ; i < users.length; i++){
+            %>
+            <tr>
+            <td><%=  users[i].id %></td> 
+            <td><%=  users[i].name %></td> 
+            <td><%=  users[i].email %></td>
+            <td><a href="/admin/editUser?id=<%=  users[i].id %>">Edit</a></td>
+            <td><a href="/admin/RemoveUser?id=<%=  users[i].id %>">Remove</a></td>    
+            </tr>
+            <%
+        }
+    }
+    else{
+        %>
+        <tr>
+            <td colspan="5">OOPS User Not founded</td>
+            
+        </tr>
+        <%
+    }
+    %>
+</table>
+</body>
+</html>

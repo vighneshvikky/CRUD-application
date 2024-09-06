@@ -1,0 +1,46 @@
+<!-- <%include("../layouts/header.ejs")%>
+
+<h1>Login Now</h1>
+
+<h3><%= locals.msg %></h3>
+
+<form action="/login" method="post">
+
+ <input type="email" placeholder="Enter the Email" name="email">   
+<br>
+<br>
+<input type="password" placeholder="Enter your Password" name="password" required>
+    <br>
+<br>
+    <button type="submit">Submit</button>
+</form>
+<a href="/register"> <button type="submit">Sign in</button></a>
+<%include("../layouts/footer.ejs")%>  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/login.css">
+    <title>Document</title>
+</head>
+<body>
+    <p><h1>Login Now</h1></p>
+
+<h3><%= locals.msg %></h3>
+
+<form action="/login" method="post">
+
+ <input type="email" placeholder="Enter the Email" name="email">   
+<br>
+<br>
+<input type="password" placeholder="Enter your Password" name="password" required>
+    <br>
+<br>
+    <button type="submit">Submit</button>
+</form>
+<a href="/register"> <button type="submit" class="btn">Sign in</button></a>
+</body>
+</html>

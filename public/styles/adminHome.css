@@ -1,0 +1,127 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+  
+}
+a{
+    text-decoration: non;
+}
+
+h3 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Action buttons styling */
+a button {
+    padding: 8px 15px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+a button:hover {
+    background-color: #218838;
+}
+
+a[href*="editUser"] button {
+    background-color: #ffc107;
+}
+
+a[href*="editUser"] button:hover {
+    background-color: #e0a800;
+}
+
+a[href*="RemoveUser"] button {
+    background-color: #dc3545;
+}
+
+a[href*="RemoveUser"] button:hover {
+    background-color: #c82333;
+}
+a{
+    text-decoration: none;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+    }
+
+    th, td {
+        font-size: 14px;
+    }
+
+    input[type="text"] {
+        width: 70%;
+    }
+
+    a button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
